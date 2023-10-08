@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up and Sign In</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image:url(signin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.form-container h1,.header h1 {
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #e3d105;
+    color:#a2091b
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+.header{
+    height:80px
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" width="80px",height="50px" id="logo">
+        <marquee  direction="left" width="80%" class="a">
+            <h1>Online Food Recipe</h1>
+            </marquee>
+
+    </div>
+    <a href="index.html" style="float:right; color: cadetblue;";">Home</a>
+    <div class="container">
+        <div class="form-container">
+            <h1>Sign In</h1>
+            <form action="signin.jsp" method="post" target="_self" id="myForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">Sign In</button><br>
+                <a href="">Forgot password</a>
+            </form>
+        </div>
+    </div>
+<!--    <script>-->
+<!--        document.getElementById("myForm").addEventListener("submit", function(event) {-->
+<!--            event.preventDefault(); // Prevent form from submitting-->
+<!--            window.location.href = "inner.html"; // Redirect to welcome.html-->
+<!--        });-->
+<!--        document.getElementById("logo").addEventListener("click", function() {-->
+<!--            window.location.href = "index.html"; // Replace with the desired URL-->
+<!--        });-->
+<!--    </script>-->
+</body>
+</html>
